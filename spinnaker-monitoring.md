@@ -53,7 +53,7 @@ Then, create two files in prometheus directory - `namespace.jsonnet` and `build.
 
 
 **namespace.jsonnet**
-```json
+```
 local kp = (import 'kube-prometheus/kube-prometheus.libsonnet') + {
   _config+:: {
     namespace: 'monitoring',
