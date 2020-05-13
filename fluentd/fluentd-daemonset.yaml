@@ -121,7 +121,6 @@ spec:
           name: fluentd-gcp-config
         name: config-volume
 #[END configMapNameDS]
-  templateGeneration: 2
   updateStrategy:
     rollingUpdate:
       maxUnavailable: 1
