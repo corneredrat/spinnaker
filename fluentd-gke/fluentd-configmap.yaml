@@ -80,6 +80,7 @@ data:
     </match>
  
     <match reform.**>
+      
       @type record_reformer
       enable_ruby true
       <record>
@@ -119,6 +120,7 @@ data:
     # buffer because user's container logs are more important than node logs.
     <match **>
       @type google_cloud
+      enable_metadata_agent false
       k8s_cluster_name vm-spinnaker
       k8s_cluster_location eks-apne
       detect_json true
